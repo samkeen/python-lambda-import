@@ -1,6 +1,10 @@
 import json
 
-from .foo import goodbye
+import os, sys
+this_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(this_dir)
+
+from foo import goodbye
 
 
 def lambda_handler(event, context):
