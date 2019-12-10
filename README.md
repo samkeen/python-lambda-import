@@ -24,4 +24,16 @@ https://github.com/samkeen/python-lambda-import/blob/hack-syspath/hello_world/ap
 
 It works locally and in Lambda, but it just seems dirty
 
+```bash
+python -m pytest
+===================================================================================== test session starts =====================================================================================
+platform darwin -- Python 3.7.4, pytest-5.3.1, py-1.8.0, pluggy-0.13.1
+rootdir: /Users/samkeen/Projects/pyhon-import-test
+collected 1 item                                                                                                                                                                              
+
+tests/unit/test_handler.py .                                                                                                                                                            [100%]
+
+====================================================================================== 1 passed in 0.02s ======================================================================================
+```
+
 What am I missing here???  Is there a non-syspath hacked strategy that works locally and in the lambda context?
